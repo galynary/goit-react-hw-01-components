@@ -1,45 +1,49 @@
-import { ReactDOM } from 'react-dom';
 import PropTypes from 'prop-types';
 import defaultImage from './defaultImage.png';
 import css from './UserProfile.module.css';
+import {
+  Card,
+  Description,
+  Stats,
+  Avatar,
+  Name,
+  Tag,
+  Location,
+  Label,
+  Quantity,
+} from './UserProfile.stated';
 
 export default function UserProfile({
   username,
   tag,
   location,
-  avatar = defaultImag,
+  avatar = defaultImage,
   stats: { followers, views, likes },
 }) {
   return (
-    <div className={css.profile}>
-      <div className={css.description}>
-        <img
-          src={avatar}
-          alt="User avatar"
-          width={100}
-          height={100}
-          className={css.avatar}
-        />
-        <p className={css.name}>{username}</p>
-        <p className={css.tag}>@{tag}</p>
-        <p className={css.location}>{location}</p>
-      </div>
+    <Card>
+      <Description>
+        <Avatar src={avatar} alt={username} />
+        <Name>{username}</Name>
+        <Tag>{tag}</Tag>
+        <Location>{location}</Location>
+      </Description>
 
-      <ul className={css.stats}>
-        <li className={css.item}>
-          <span className={css.label}>Followers</span>
-          <span className={css.quantity}>{followers}</span>
+      <Stats>
+        <li>
+          <Label>Followers</Label>
+          <Quantity>{Stats.followers}</Quantity>
         </li>
-        <li className={css.item}>
-          <span className={css.label}>Views</span>
-          <span className={css.quantity}>{views}</span>
+        <li>
+          <Label>Views</Label>
+          <Quantity>{Stats.views}</Quantity>
         </li>
-        <li className={css.item}>
-          <span className={css.label}>Likes</span>
-          <span className={css.quantity}>{likes}</span>
+        <li>
+          <Label>Likes</Label>
+          <Quantity>{Stats.likes}</Quantity>
         </li>
-      </ul>
-    </div>
+      </Stats>
+    </Card>
   );
 }
 

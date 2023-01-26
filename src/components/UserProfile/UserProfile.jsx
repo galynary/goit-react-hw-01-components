@@ -1,5 +1,7 @@
 import { ReactDOM } from 'react-dom';
-import UserProfile from './user.json';
+import PropTypes from 'prop-types';
+import defaultImage from './defaultImage.png';
+import css from './UserProfile.module.css';
 
 export default function UserProfile({
   username,

@@ -1,5 +1,5 @@
-import user from '../user.json';
-import data from '../data.json';
+import user from '../data/user.json';
+import data from '../data/data.json';
 import UserProfile from './UserProfile/UserProfile';
 import Statistics from './Statistics/Statistics';
 export const App = () => {

@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import defaultImage from './defaultImage.png';
-import css from './UserProfile.module.css';
 import {
   Card,
   Description,
@@ -11,7 +10,7 @@ import {
   Location,
   Label,
   Quantity,
-} from './UserProfile.stated';
+} from './UserProfile.staled';
 
 export default function UserProfile({
   username,

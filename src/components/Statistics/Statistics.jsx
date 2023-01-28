@@ -7,7 +7,8 @@ import {
   Item,
   Label,
   Percentage,
-} from './Statistics.styted';
+} from './Statistics.styled';
+
 function randomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
@@ -15,12 +16,12 @@ function randomHexColor() {
 export default function Statistics({ title, stats }) {
   return (
     <StatisticsList>
-      {title === 'Upload stats' ? <Title>{title}</Title> : null}
+      {title && <Title>{title}</Title>}
       <Stats>
-        {stats.map(stat => (
-          <Item key={stat.id} color={`${randomHexColor()}`}>
-            <Label>{stat.label}</Label>
-            <Percentage>{stat.percent}</Percentage>
+        {stats.map(({ id, label, percentage }) => (
+          <Item key={id} color={`${randomHexColor()}`}>
+            <Label>{label}</Label>
+            <Percentage>{percentage}%</Percentage>
           </Item>
         ))}
       </Stats>

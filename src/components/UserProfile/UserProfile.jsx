@@ -10,7 +10,7 @@ import {
   Location,
   Label,
   Quantity,
-} from './UserProfile.staled';
+} from './UserProfile.styled';
 
 export default function UserProfile({
   username,

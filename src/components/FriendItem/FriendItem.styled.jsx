@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 
 export const Item = styled.li`
-  width: 300px;
-  border: 2px solid gray;
+  width: 400px;
+  box-shadow: 1px 2px 3px 2px rgb(206 206 206);
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -20,10 +20,7 @@ export const Status = styled.span`
   width: 20px;
   height: 20px;
   background-color: ${({ isOnline }) => {
-    // (props)
-    //  console.log(props.isOnline);
     if (isOnline) {
-      // (props.isOnLine)
       return 'green';
     } else {
       return 'red';
@@ -37,10 +34,11 @@ export const AvatorPic = styled.img`
   border: 1px solid gray;
   border-radius: 4px;
   margin-right: 20px;
+  padding: 2px;
   height: 50px;
 `;
 
 export const Name = styled.p`
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 600;
 `;

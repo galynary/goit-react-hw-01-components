@@ -19,12 +19,14 @@ export const Status = styled.span`
   margin-right: 10px;
   width: 20px;
   height: 20px;
-  background-color: ${props => {
-    console.log(props);
-    if (props.children === true) {
-      return (props.type = 'green');
+  background-color: ${({ isOnline }) => {
+    // (props)
+    //  console.log(props.isOnline);
+    if (isOnline) {
+      // (props.isOnLine)
+      return 'green';
     } else {
-      return (props.type = 'red');
+      return 'red';
     }
   }};
   border-radius: 50%;

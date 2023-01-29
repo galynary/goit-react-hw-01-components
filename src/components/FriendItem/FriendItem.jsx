@@ -1,10 +1,11 @@
-import { Item, Status, AvatorPic, Name } from './Friend.styled';
+import { Item, Status, AvatorPic, Name } from './FriendItem.styled';
+
 export function Friend(props) {
   console.log(props);
-  const { avatar, name, isOnline, type } = props;
+  const { avatar, name, isOnline } = props;
   return (
     <Item>
-      <Status type={type}>{isOnline}</Status>
+      <Status isOnline={isOnline}></Status>
       <AvatorPic src={avatar} alt={name} width="48" />
       <Name>{name}</Name>
     </Item>

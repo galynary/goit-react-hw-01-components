@@ -4,7 +4,9 @@ export const TrasactionTable = styled.table`
   width: 100%;
   thead {
     background-color: #3f9aef;
+    color: #fff;
     height: 50px;
+    font-size: 20px;
   }
 
   tbody {

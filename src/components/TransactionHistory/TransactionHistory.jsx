@@ -15,7 +15,7 @@ export function TransactionHistory({ items }) {
       <tbody>
         {items.map(({ id, type, amount, currency }, index) => (
           <Transaction
-            bacColor={index % 2 ? 'blue' : 'white'}
+            bacColor={index % 2 ? '#CBEAF3' : 'white'}
             key={id}
             type={type}
             amount={amount}

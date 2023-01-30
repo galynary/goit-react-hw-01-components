@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 export const TrasactionTable = styled.table`
   width: 100%;
   thead {
-    background-color: #blue;
+    background-color: #3f9aef;
     height: 50px;
   }
 

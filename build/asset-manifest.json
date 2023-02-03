@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/github.com/goit-react-hw-01-components/static/css/main.9721d5c5.css",
-    "main.js": "/github.com/goit-react-hw-01-components/static/js/main.6c2eeabd.js",
-    "static/media/defaultImage.png": "/github.com/goit-react-hw-01-components/static/media/defaultImage.e549f5f3dbb0a0fea043.png",
-    "index.html": "/github.com/goit-react-hw-01-components/index.html",
-    "main.9721d5c5.css.map": "/github.com/goit-react-hw-01-components/static/css/main.9721d5c5.css.map",
-    "main.6c2eeabd.js.map": "/github.com/goit-react-hw-01-components/static/js/main.6c2eeabd.js.map"
+    "main.css": "/goit-react-hw-01-components/static/css/main.7acaea2f.css",
+    "main.js": "/goit-react-hw-01-components/static/js/main.e86a6b01.js",
+    "static/media/defaultImage.png": "/goit-react-hw-01-components/static/media/defaultImage.e549f5f3dbb0a0fea043.png",
+    "index.html": "/goit-react-hw-01-components/index.html",
+    "main.7acaea2f.css.map": "/goit-react-hw-01-components/static/css/main.7acaea2f.css.map",
+    "main.e86a6b01.js.map": "/goit-react-hw-01-components/static/js/main.e86a6b01.js.map"
   },
   "entrypoints": [
-    "static/css/main.9721d5c5.css",
-    "static/js/main.6c2eeabd.js"
+    "static/css/main.7acaea2f.css",
+    "static/js/main.e86a6b01.js"
   ]
 }
